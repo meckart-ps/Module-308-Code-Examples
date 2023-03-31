@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Form Validation Practice</title>
+		
+		<style>
+			body, html {
+				width: 100%;
+				height: 100%;
+				margin: 0px;
+				padding: 0px;
+			}
+			body {
+				background: linear-gradient(-45deg, #0079C0, #0097A7, #4285F4);
+				color: #888;
+				font-family: Calibri;
+			}
+		</style>
+		
+		<!-- Font Awesome for Icons -->
+		<script src="https://kit.fontawesome.com/d8f052c6cf.js" crossorigin="anonymous"></script>
+		
+		<!-- Bootstrap for Styling -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+		
+		<script>
+			/* 	Add your form validation code below!
+				If you need to edit the HTML, do so minimally.
+				Think about ways to access the data you need through
+				JavaScript properties, methods, and selectors! */
+				
+			// My code here.
+		</script>
+	</head>
+	<body class="d-flex w-100 h-100 align-items-center justify-content-center" style="user-select: none">
+		<!-- Container for entire form. -->
+		<div class="row bg-light mx-auto" style="width: 750px">
+			<!-- Registration Side -->
+			<div class="col-6 p-4">
+				<h2 class="text-primary pb-2 border-bottom border-secondary">Register</h2>
+				<p class="text-muted">Please provide your information below.</p>
+				
+				<!-- Registration Form -->
+				<form id="registration">
+					<div class="input-group mb-2">
+						<span class="text-secondary bg-white input-group-text"><i class="fa-solid fa-user"></i></span>
+						<input name="username" type="text" placeholder="Username" required class="form-control" />
+					</div>
+					
+					<div class="input-group mb-2">
+						<span class="text-secondary bg-white input-group-text"><i class="fa-solid fa-envelope"></i></span>
+						<input name="email" type="email" placeholder="Email" required class="form-control" />	
+					</div>
+					
+					<div class="input-group mb-2">
+						<span class="text-secondary bg-white input-group-text"><i class="fa-solid fa-key"></i></span>
+						<input name="password" type="password" placeholder="Password" required class="form-control" />
+					</div>
+					
+					<div class="input-group mb-4">
+						<span class="text-secondary bg-white input-group-text"><i class="fa-solid fa-key"></i></span>
+						<input name="passwordCheck" type="password" placeholder="Repeat Password" required class="form-control" />
+					</div>
+					
+					<div class="row w-100 mb-2 mx-0 align-items-center">
+						<div class="form-check col">
+							<input id="terms" name="terms" type="checkbox" required class="form-check-input" />
+							<label for="terms" class="form-check-label text-muted">I agree to the&nbsp;<a href="#">Terms of Use</a>.</label>
+						</div>					
+						<input type="submit" value="Register" class="btn btn-success" style="width: 90px" />
+					</div>
+				</form>
+			</div>
+			
+			<!-- Login Side -->
+			<div class="col-6 p-4 position-relative">
+				<h2 class="text-primary pb-2 border-bottom border-secondary">Login</h2>
+				<p class="text-muted">Login using your account information.</p>
+				
+				<!-- Login Form -->
+				<form id="login">
+					<div class="input-group mb-2">
+						<span class="text-secondary bg-white input-group-text"><i class="fa-solid fa-user"></i></span>
+						<input name="username" type="text" placeholder="Username" required class="form-control" />
+					</div>
+					
+					<div class="input-group mb-4">
+						<span class="text-secondary bg-white input-group-text"><i class="fa-solid fa-key"></i></span>
+						<input name="password" type="password" placeholder="Password" required class="form-control" />
+					</div>
+					
+					<div class="row w-100 mb-2 mx-0 align-items-center">
+						<div class="form-check col">
+							<input id="persist" name="persist" type="checkbox" required class="form-check-input" />
+							<label for="persist" class="form-check-label text-muted">Keep me logged in.</label>
+						</div>					
+						<input type="submit" value="Login" class="btn btn-success" style="width: 90px" />
+					</div>
+				</form>
+					
+				<p class="text-muted position-absolute py-3 mb-4 border-top border-secondary" style="bottom: 0">Forgot your <a href="#">Username</a> or <a href="#">Password?</a></p>
+			</div>
+		</div>
+	</body>
+</html>
